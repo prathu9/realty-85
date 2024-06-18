@@ -223,3 +223,34 @@ nav .nav-btn a:last-child {
     font-size: 18px;
     line-height: 24px;
 }
+
+/*Property card*/
+.property-card-section{
+    margin:0 auto;
+    max-width: 1440px;
+    padding: 32px 40px;
+}
+
+.property-card-section h2{
+    color: #6C6C89;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.property-card-section h2 strong{
+    color: #121217;
+}
+
+.property-card-section h4{
+    color:#6C6C89;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.property-card-container{
+    margin: 24px 0 32px 0;
+    display: flex;
+    gap:32px;
+}
