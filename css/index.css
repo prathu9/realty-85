@@ -5,6 +5,7 @@
 }
 
 a {
+  color: #fff;
   cursor: pointer;
   text-decoration: none;
 }
@@ -127,7 +128,8 @@ nav .nav-btn a:last-child {
   background-color: #f7f7f8;
 }
 
-.about > h4 {
+.about > h4,
+.agents .agents-container h4{
   width: 100px;
   margin: 0 auto 23px auto;
   padding: 0 0 23px 0;
@@ -139,7 +141,8 @@ nav .nav-btn a:last-child {
   border-bottom: 4px solid #e61e2b;
 }
 
-.about > h2 {
+.about > h2,
+.agents .agents-container h2 {
   margin: 0 auto;
   position: relative;
   color: #121217;
@@ -166,19 +169,19 @@ nav .nav-btn a:last-child {
   flex: 48% 0 0;
 }
 
-.about-content h3{
-    margin: 0 0 32px 0;
-    color:#121217;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 36px;
+.about-content h3 {
+  margin: 0 0 32px 0;
+  color: #121217;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
 }
 
-.about-content p{
-    color: #6C6C89;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 32px;    
+.about-content p {
+  color: #6c6c89;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
 }
 
 .about-profile-wrapper {
@@ -205,52 +208,249 @@ nav .nav-btn a:last-child {
   justify-content: center;
 }
 
-.about .stats > div span{
-    margin: 0 0 16px 0;
-    display: block;
-    font-weight: 700;
-    text-align: center;
+.about .stats > div span {
+  margin: 0 0 16px 0;
+  display: block;
+  font-weight: 700;
+  text-align: center;
 }
 
-.about .stats span:first-child{
-    color: #121217;
-    font-size: 48px;
-    line-height: 48px;
+.about .stats span:first-child {
+  color: #121217;
+  font-size: 48px;
+  line-height: 48px;
 }
 
-.about .stats span:last-child{
-    color: #A9A9BC;
-    font-size: 18px;
-    line-height: 24px;
+.about .stats span:last-child {
+  color: #a9a9bc;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /*Property card*/
-.property-card-section{
-    margin:0 auto;
-    max-width: 1440px;
-    padding: 32px 40px;
+.property-card-section {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 32px 40px;
 }
 
-.property-card-section h2{
-    color: #6C6C89;
-    font-size: 24px;
+.property-card-section h2 {
+  color: #6c6c89;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.property-card-section h2 strong {
+  color: #121217;
+}
+
+.property-card-section h4 {
+  color: #6c6c89;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.property-card-container {
+  margin: 24px 0 32px 0;
+  display: flex;
+  gap: 32px;
+}
+
+/*Check Property card style in property card css*/
+
+/*Our Agents*/
+.agents{
+    padding: 82.5px 144px;
+    background-color: #F7F7F8;
+}
+
+.agents .agents-container{
+    margin: 0 auto;
+    max-width: 1152px;
+}
+
+.agents .agents-container h4,
+.agents .agents-container h2{
+    margin-left: 0;
+    text-align: left;
+}
+
+.agents-list{
+    margin: 82.5px 0 0 0;
+    display: flex;
+    gap:32px;
+    flex-wrap: wrap;
+}
+
+.view-all-btn-wrapper{
+    margin: 0 auto;
+    padding: 48px 0;
+    text-align: center;
+}
+
+.view-all-btn-wrapper a{
+    padding: 12px 24px;
+    color:#121217;
+    border: 1px solid #D1D1DB;
+    background-color: #fff;
+    border-radius: 16px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 36px;
+    line-height: 24px;
+}   
+
+.agents hr{
+    margin: 48px 0;
+    max-width: 1152px;
+    height: 1px;
+    background-color: #D1D1DB;
 }
 
-.property-card-section h2 strong{
+.join-action{
+    padding: 52px 0 0 0;
+    display: flex;
+    gap:24px;
+    justify-content: center;
+}
+
+.join-action h2{
     color: #121217;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
 }
 
-.property-card-section h4{
-    color:#6C6C89;
-    font-size: 14px;
-    font-weight: 500;
+.join-action a{
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 12px;
+    background-color: #282833;
+}
+
+
+/*Footer*/
+footer {
+    position: relative;
+    margin: 280px 0 0 0;
+  padding: 144px 96px 0;
+  background-color: #121217;
+}
+
+.footer-banner{
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px;
+    position: absolute;
+    top: -45%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 24px;
+    background-image: linear-gradient(to left top, #E61E2B 50%, #801118 100%);
+}
+
+.footer-banner h2{
+    flex: 52% 0 0;
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.footer-banner .btn-container{
+    display: flex;
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 24px;
 }
 
-.property-card-container{
-    margin: 24px 0 32px 0;
+.footer-banner .btn-container a{
+    border-radius: 8px;
+}
+
+.footer-banner a{
+    padding: 12px 20px;
+    color: #000;
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+.footer-nav-container {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.footer-logo-container {
+  max-width: 185px;
+}
+
+.footer-logo {
+  margin: 0 0 48px 0;
+  width: 184px;
+  height: 60px;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-logo-container p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-nav-wrapper {
+  display: flex;
+  gap: 96px;
+}
+
+.footer-nav {
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.footer-nav h3 {
+  color: #6c6c89;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.footer-nav li {
+  margin: 0 0 20px 0;
+}
+
+.legal-info{
+    padding: 40px 0;
     display: flex;
-    gap:32px;
+    justify-content: space-between;
+    color: #fff;
+    border-top: 1px solid #6C6C89;
+}
+
+.legal-info .terms{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.legal-info .terms .spacer{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 100%;
 }
