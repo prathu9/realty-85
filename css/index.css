@@ -355,9 +355,19 @@ header .overlay {
 
 .property-card-container {
   margin: 24px 0 32px 0;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+.property-card-wrapper{
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+}
+
+.property-card-wrapper *{
+  flex: fit-content 0 0;
 }
 
 /*Check Property card style in property card css*/
@@ -599,6 +609,17 @@ header .overlay {
 
   .property-card-section h4{
     font-size: 12px;
+  }
+
+  .property-card-container{
+    height: 380px;
+  }
+
+  .property-card-wrapper{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    box-sizing: content-box;
   }
 
   .agents {
