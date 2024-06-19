@@ -30,7 +30,7 @@ header .bg-image {
   position: absolute;
   top: 0;
   right: -31%;
-  z-index: -1;
+  z-index: -2;
 }
 
 header .bg-image img {
@@ -81,9 +81,6 @@ nav .main-nav {
   gap: 16px;
 }
 
-nav .main-nav li {
-}
-
 nav .main-nav li a {
   padding: 12px 20px;
 }
@@ -129,7 +126,7 @@ nav .nav-btn a:last-child {
 }
 
 .about > h4,
-.agents .agents-container h4{
+.agents .agents-container h4 {
   width: 100px;
   margin: 0 auto 23px auto;
   padding: 0 0 23px 0;
@@ -158,11 +155,12 @@ nav .nav-btn a:last-child {
 .about-wrapper {
   margin: 102.5px auto 0 auto;
   padding: 91px 10px 83px 91px;
-  background-color: #fff;
   max-width: 1223px;
   min-height: 439px;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
+  background-color: #fff;
 }
 
 .about-wrapper > div {
@@ -184,7 +182,28 @@ nav .nav-btn a:last-child {
   line-height: 32px;
 }
 
-.about-profile-wrapper {
+.about-image .about-name{
+  position: relative;
+  right: 40px;
+  width: 124px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color:#3F3F50;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.about-image .about-name .name{
+  margin: 0 0 0 auto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.about-image-wrapper {
   width: 45%;
   height: 637px;
   position: absolute;
@@ -194,7 +213,7 @@ nav .nav-btn a:last-child {
   background-color: transparent;
 }
 
-.about-profile-wrapper img {
+.about-image-wrapper img {
   width: 100%;
   height: 120%;
   object-fit: contain;
@@ -204,6 +223,7 @@ nav .nav-btn a:last-child {
 .about .stats {
   padding: 108px 0 99px 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 146px;
   justify-content: center;
 }
@@ -261,124 +281,123 @@ nav .nav-btn a:last-child {
 /*Check Property card style in property card css*/
 
 /*Our Agents*/
-.agents{
-    padding: 82.5px 144px;
-    background-color: #F7F7F8;
+.agents {
+  padding: 82.5px 144px;
+  background-color: #f7f7f8;
 }
 
-.agents .agents-container{
-    margin: 0 auto;
-    max-width: 1152px;
+.agents .agents-container {
+  margin: 0 auto;
+  max-width: 1152px;
 }
 
 .agents .agents-container h4,
-.agents .agents-container h2{
-    margin-left: 0;
-    text-align: left;
+.agents .agents-container h2 {
+  margin-left: 0;
+  text-align: left;
 }
 
-.agents-list{
-    margin: 82.5px 0 0 0;
-    display: flex;
-    gap:32px;
-    flex-wrap: wrap;
+.agents-list {
+  margin: 82.5px 0 0 0;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
-.view-all-btn-wrapper{
-    margin: 0 auto;
-    padding: 48px 0;
-    text-align: center;
+.view-all-btn-wrapper {
+  margin: 0 auto;
+  padding: 48px 0;
+  text-align: center;
 }
 
-.view-all-btn-wrapper a{
-    padding: 12px 24px;
-    color:#121217;
-    border: 1px solid #D1D1DB;
-    background-color: #fff;
-    border-radius: 16px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-}   
-
-.agents hr{
-    margin: 48px 0;
-    max-width: 1152px;
-    height: 1px;
-    background-color: #D1D1DB;
+.view-all-btn-wrapper a {
+  padding: 12px 24px;
+  color: #121217;
+  border: 1px solid #d1d1db;
+  background-color: #fff;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
-.join-action{
-    padding: 52px 0 0 0;
-    display: flex;
-    gap:24px;
-    justify-content: center;
+.agents hr {
+  margin: 48px 0;
+  max-width: 1152px;
+  height: 1px;
+  background-color: #d1d1db;
 }
 
-.join-action h2{
-    color: #121217;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 40px;
+.join-action {
+  padding: 52px 0 0 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
-.join-action a{
-    padding: 12px 24px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-    border-radius: 12px;
-    background-color: #282833;
+.join-action h2 {
+  color: #121217;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
 }
 
+.join-action a {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 12px;
+  background-color: #282833;
+}
 
 /*Footer*/
 footer {
-    position: relative;
-    margin: 280px 0 0 0;
+  position: relative;
+  margin: 280px 0 0 0;
   padding: 144px 96px 0;
   background-color: #121217;
 }
 
-.footer-banner{
-    width: 88%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 96px;
-    position: absolute;
-    top: -45%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 24px;
-    background-image: linear-gradient(to left top, #E61E2B 50%, #801118 100%);
+.footer-banner {
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 96px;
+  position: absolute;
+  top: -45%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 24px;
+  background-image: linear-gradient(to left top, #e61e2b 50%, #801118 100%);
 }
 
-.footer-banner h2{
-    flex: 52% 0 0;
-    color: #FFFFFF;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 72px;
+.footer-banner h2 {
+  flex: 52% 0 0;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
 }
 
-.footer-banner .btn-container{
-    display: flex;
-    gap: 16px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
+.footer-banner .btn-container {
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
-.footer-banner .btn-container a{
-    border-radius: 8px;
+.footer-banner .btn-container a {
+  border-radius: 8px;
 }
 
-.footer-banner a{
-    padding: 12px 20px;
-    color: #000;
-    background-color: #fff;
-    white-space: nowrap;
+.footer-banner a {
+  padding: 12px 20px;
+  color: #000;
+  background-color: #fff;
+  white-space: nowrap;
 }
 
 .footer-nav-container {
@@ -433,24 +452,145 @@ footer {
   margin: 0 0 20px 0;
 }
 
-.legal-info{
-    padding: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    border-top: 1px solid #6C6C89;
+.legal-info {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  border-top: 1px solid #6c6c89;
 }
 
-.legal-info .terms{
-    display: flex;
-    gap:20px;
-    align-items: center;
+.legal-info .terms {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.legal-info .terms .spacer{
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 100%;
+.legal-info .terms .spacer {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 640px) {
+  header {
+    padding: 0;
+    height: fit-content;
+    background-color: #000;
+  }
+  nav {
+    position: absolute;
+    padding: 16px;
+    top: 0;
+  }
+  nav .main-nav,
+  nav .nav-btn {
+    display: none;
+  }
+
+  .hero-title {
+    margin: 31px 32px 193px 0;
+    padding: 16px;
+    max-width: 100%;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+  }
+
+  header .overlay {
+    width: 100%;
+    height: 467px;
+  }
+
+  header .bg-image {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    right: 0;
+    aspect-ratio: 1.9;
+    z-index: 1;
+  }
+
+  header .bg-image img {
+    position: absolute;
+    top:0;
+    height: fit-content;
+    object-fit: cover;
+   
+  }
+
+  .about {
+    padding: 32px 16px 39px;
+  }
+
+  .about > h4,
+  .agents .agents-container h4 {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .about > h2,
+  .agents .agents-container h2 {
+    font-size: 24px;
+    line-height: 30px;
+    width: 100%;
+  }
+  
+  .about-wrapper {
+    margin: 32px auto 0 auto;
+    padding: 24px 23px 91px;
+    gap: 22px;
+  }
+
+  .about-wrapper > div{
+    flex: 100% 0 0;
+  }
+
+  .about-content h3{
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .about-content p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .about-wrapper .about-image{
+    margin: 120px 0 0 0;
+  }
+
+  .about-image .about-name{
+    top: -38px;
+        right: 5px;
+  }
+
+  .about-image-wrapper{
+    width: 275px;
+  }
+
+  .about .stats{
+    padding: 42px 0 0;
+    gap: 36px;
+  }
+
+  .about .stats > div span {
+    margin: 0 0 8px 0;
+  }
+
+  .about .stats span:first-child{
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about .stats span:last-child{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
 }
