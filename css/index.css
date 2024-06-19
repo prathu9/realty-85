@@ -366,8 +366,8 @@ header .overlay {
   gap: 32px;
 }
 
-.property-card-wrapper *{
-  flex: fit-content 0 0;
+.property-card-wrapper > *{
+  flex: 316px 0 0;
 }
 
 /*Check Property card style in property card css*/
