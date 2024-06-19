@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/property-card.css" />
     <link rel="stylesheet" href="./css/agent-card.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -38,9 +38,70 @@
           <a>Agent Login</a>
           <a>Get Started</a>
         </div>
+        <div class="hamburger-menu">
+          <label for="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="menu-btn" type="checkbox" />
+        </div>
       </nav>
-      <h1 class="hero-title">We help you Buy, Sell & Rent your home</h1>
       <div class="overlay"></div>
+      <h1 class="hero-title">We help you Buy, Sell & Rent your home</h1>
+      
+      
+      <div class="property-tab">
+        <ul class="property-tab-options">
+          <li class="active">Buy</li>
+          <li>Sell</li>
+          <li>Rent</li>
+        </ul>
+        <div class="property-option-content">
+          <ul>
+            <li>
+              <div class="property-option property-location">
+                <label>Location</label>
+                <input
+                  value="Saint Louis, Missouri"
+                  placeholder="Saint Louis, Missouri"
+                />
+              </div>
+              <div class="separator"></div>
+              <div class="property-option property-type">
+                <label> Property Type </label>
+                <select>
+                  <option selected="selected">Single-Family</option>
+                </select>
+              </div>
+              <div class="separator"></div>
+              <div class="property-option price-range">
+                <label> Price Range </label>
+                <select>
+                  <option selected="selected">$500k - $1m</option>
+                </select>
+              </div>
+              <button class="property-option-btn">
+                <svg
+                  width="16"
+                  height="12"
+                  viewBox="0 0 16 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.75 0.75L15.25 6L9.75 11.25M15 6H0.75"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="bg-image">
         <img src="./assets/header-bg.jpg" alt="background" />
       </div>
@@ -92,34 +153,15 @@
           <div class="room-info">
             <h3>Amazing home title</h3>
             <div class="specifications">
-                <span> <span class="bed-count"><strong>3</strong></span> bedroom </span>
-                <span> <span class="bath-count"><strong>2</strong></span> bath </span>
-                <span> <span class="area"><strong>1,200</strong></span> squ ft </span>
-              </div>
-            <div class="property-price">
-              <div class="price-wrapper">
-                $<span class="price">1,200,000</span>
-              </div>
-              <div class="avatar-container">
-                <div class="avatar">
-                  <img src="./assets/property-card-avatar.png" alt="avatar" />
-                </div>
-
-                <span class="avatar-name">Ted L.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="property-card">
-          <div class="image-container">
-            <img src="./assets/property-card-image.jpg" alt="card-image" />
-          </div>
-          <div class="room-info">
-            <h3>Amazing home title</h3>
-            <div class="specifications">
-              <span> <span class="bed-count"><strong>3</strong></span> bedroom </span>
-              <span> <span class="bath-count"><strong>2</strong></span> bath </span>
-              <span> <span class="area"><strong>1,200</strong></span> squ ft </span>
+              <span>
+                <span class="bed-count"><strong>3</strong></span> bedroom
+              </span>
+              <span>
+                <span class="bath-count"><strong>2</strong></span> bath
+              </span>
+              <span>
+                <span class="area"><strong>1,200</strong></span> squ ft
+              </span>
             </div>
             <div class="property-price">
               <div class="price-wrapper">
@@ -142,10 +184,16 @@
           <div class="room-info">
             <h3>Amazing home title</h3>
             <div class="specifications">
-                <span> <span class="bed-count"><strong>3</strong></span> bedroom </span>
-                <span> <span class="bath-count"><strong>2</strong></span> bath </span>
-                <span> <span class="area"><strong>1,200</strong></span> squ ft </span>
-              </div>
+              <span>
+                <span class="bed-count"><strong>3</strong></span> bedroom
+              </span>
+              <span>
+                <span class="bath-count"><strong>2</strong></span> bath
+              </span>
+              <span>
+                <span class="area"><strong>1,200</strong></span> squ ft
+              </span>
+            </div>
             <div class="property-price">
               <div class="price-wrapper">
                 $<span class="price">1,200,000</span>
@@ -167,9 +215,46 @@
           <div class="room-info">
             <h3>Amazing home title</h3>
             <div class="specifications">
-              <span> <span class="bed-count"><strong>3</strong></span> bedroom </span>
-              <span> <span class="bath-count"><strong>2</strong></span> bath </span>
-              <span> <span class="area"><strong>1,200</strong></span> squ ft </span>
+              <span>
+                <span class="bed-count"><strong>3</strong></span> bedroom
+              </span>
+              <span>
+                <span class="bath-count"><strong>2</strong></span> bath
+              </span>
+              <span>
+                <span class="area"><strong>1,200</strong></span> squ ft
+              </span>
+            </div>
+            <div class="property-price">
+              <div class="price-wrapper">
+                $<span class="price">1,200,000</span>
+              </div>
+              <div class="avatar-container">
+                <div class="avatar">
+                  <img src="./assets/property-card-avatar.png" alt="avatar" />
+                </div>
+
+                <span class="avatar-name">Ted L.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="image-container">
+            <img src="./assets/property-card-image.jpg" alt="card-image" />
+          </div>
+          <div class="room-info">
+            <h3>Amazing home title</h3>
+            <div class="specifications">
+              <span>
+                <span class="bed-count"><strong>3</strong></span> bedroom
+              </span>
+              <span>
+                <span class="bath-count"><strong>2</strong></span> bath
+              </span>
+              <span>
+                <span class="area"><strong>1,200</strong></span> squ ft
+              </span>
             </div>
             <div class="property-price">
               <div class="price-wrapper">

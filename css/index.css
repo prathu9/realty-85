@@ -43,14 +43,14 @@ header .bg-image img {
 }
 
 header .overlay {
-  background-color: #000;
+  background: #121217 linear-gradient(160.73deg, #121217 5.89%, #212123 87.05%);
+  ;
   /* width: 924px; */
   width: 62.5%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
 .hero-title {
@@ -62,6 +62,101 @@ header .overlay {
   font-weight: 400;
   line-height: 88px;
   line-height: 88px;
+}
+
+.property-tab{
+  margin: 67px 0 0 99px;
+  border-radius: 50px;
+}
+
+.property-tab-options{
+  margin: 0 0 16px 0;
+  width: 449px;
+  display: flex;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #000;
+  box-shadow: 0px 1px 2px 0 rgba(18, 18, 23, 0.1);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.property-tab-options li{
+  padding: 12px 58px;
+  font-size: 16px;
+  list-style-type: none;
+  border-radius: 50px;
+}
+
+.property-tab-options li.active{
+  color: #fff;
+  background-color: #DE1E2A;
+}
+
+.property-option-content{
+  max-width: 905px;
+}
+
+.property-option-content ul{
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.property-option-content ul li{
+  display: flex;
+  align-items: center;
+}
+
+.property-option-content li .separator{
+    margin: 0 40px;
+    width: 1px;
+    height: 38px;
+    background-color: #EBEBEF;
+}
+
+.property-option-content .property-option{
+  display: flex;
+  flex-direction: column;
+}
+
+.property-option-content .property-option label{
+  margin: 0 0 10px 0;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #3F3F50;
+  background-color: #F7F7F8;
+}
+
+.property-option-content .property-option input,
+.property-option-content .property-option select{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #121217;
+  border: none;
+  outline: none;
+}
+
+.property-option-content .property-option input{
+  width: 210px;
+}
+
+.property-option-content .property-option select{
+  cursor: pointer;
+}
+
+.property-option-content .property-option-btn{
+  margin: 0 0 0 auto;
+  width:48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  background-color: #E61E2B;
 }
 
 /*About*/
@@ -322,17 +417,20 @@ header .overlay {
   }
 
   .hero-title {
-    margin: 31px 32px 193px 0;
+    position: relative;
+    margin: 31px 32px 0 0;
     padding: 16px;
     max-width: 100%;
     font-size: 28px;
     font-weight: 400;
     line-height: 44px;
+    z-index: 2;
   }
 
   header .overlay {
     width: 100%;
     height: 467px;
+    z-index: 1;
   }
 
   header .bg-image {
@@ -341,7 +439,7 @@ header .overlay {
     position: relative;
     right: 0;
     aspect-ratio: 1.9;
-    z-index: 1;
+    z-index: 2;
   }
 
   header .bg-image img {
@@ -350,6 +448,32 @@ header .overlay {
     height: fit-content;
     object-fit: cover;
    
+  }
+
+  .property-tab{
+    position: relative;
+    top: 20px;
+    margin: 20px 16px 0 16px;
+    z-index: 4;
+  }
+
+  .property-tab-options{
+    width: 272px;
+  }
+
+  .property-tab-options li{
+    padding: 5px 30px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .property-option-content .property-type,
+  .property-option-content .price-range{
+    display: none;
+  }
+
+  .property-option-content li .separator{
+    display: none;
   }
 
   .about {
