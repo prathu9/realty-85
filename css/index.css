@@ -18,6 +18,7 @@ body {
   max-width: 2000px;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
+  color: #121217;
 }
 
 /* Header */
@@ -34,6 +35,41 @@ header .bg-image {
   top: 0;
   right: -31%;
   z-index: -2;
+}
+
+header .bg-image .location-box{
+  padding: 16px 109px 16px 16px;
+  position: absolute;
+  right: 37%;
+  bottom: 22%;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px); 
+  z-index: 100;
+}
+
+header .bg-image .location-box span{
+  display: block;
+}
+
+header .bg-image .location-box span:first-child{
+  width: 90px;
+  margin: 0 0 8px 0;
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight:600;
+  line-height: 16px;
+  border-radius: 4px;
+  color:#3F3F50;
+  background-color: rgba(247, 247, 248, 0.5);
+}
+
+header .bg-image .location-box span:last-child{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 header .bg-image img {
@@ -296,7 +332,7 @@ header .overlay {
 .property-card-section {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 32px 40px;
+  padding: 32px;
 }
 
 .property-card-section h2 {
@@ -451,6 +487,10 @@ header .overlay {
     height: fit-content;
     object-fit: cover;
    
+  }
+
+  header .bg-image .location-box{
+    display: none;
   }
 
   .property-tab{
