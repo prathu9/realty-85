@@ -363,6 +363,7 @@ header .overlay {
 .property-card-wrapper{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
 }
 
@@ -391,6 +392,12 @@ header .overlay {
 
 .agents-list {
   margin: 82.5px 0 0 0;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+.agents-list-wrapper{
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -599,7 +606,7 @@ header .overlay {
   }
 
   .property-card-section{
-    padding: 32px 20px;
+    padding: 32px 16px;
   }
 
   .property-card-section h2{
@@ -615,11 +622,14 @@ header .overlay {
     height: 380px;
   }
 
-  .property-card-wrapper{
+  .property-card-wrapper,
+  .agents-list-wrapper{
     flex-wrap: nowrap;
     overflow-x: scroll;
     padding-bottom: 20px;
     box-sizing: content-box;
+    justify-content: start;
+    gap: 16px;
   }
 
   .agents {
@@ -628,6 +638,11 @@ header .overlay {
 
   .agents-list {
     margin: 32px 0 0 0;
+    height: 480px;
+  }
+
+  .agents-list-wrapper > *{
+    flex: 290px 0 0;
   }
 
   .view-all-btn-wrapper a {
