@@ -23,7 +23,7 @@
     background-color: #000;
 }
 
-.agent-info h4{
+.agent-info > h4{
     margin: 0 0 8px 0;
     color: #F53D6B;
     font-size: 12px;
@@ -53,3 +53,24 @@
     line-height: 24px;
 }
 
+@media screen and (max-width: 640px) {
+    .agent-card {
+        flex-wrap: wrap;
+    }
+
+    .agent-image{
+        flex: 100% 0 0;
+        height: fit-content;
+        aspect-ratio: 1.5;
+    }
+
+    .agent-image img{
+        object-fit: cover;
+        object-position: 0% 0%;
+    }
+
+    .agent-info .agent-name{
+        font-size: 18px;
+        line-height: 32px;
+    }
+}

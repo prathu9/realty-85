@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+strong{
+  color:#121217;
+}
+
 body {
   max-width: 2000px;
   margin: 0 auto;
@@ -126,7 +130,7 @@ nav .nav-btn a:last-child {
 }
 
 .about > h4,
-.agents .agents-container h4 {
+.agents .agents-container > h4 {
   width: 100px;
   margin: 0 auto 23px auto;
   padding: 0 0 23px 0;
@@ -139,7 +143,7 @@ nav .nav-btn a:last-child {
 }
 
 .about > h2,
-.agents .agents-container h2 {
+.agents .agents-container > h2 {
   margin: 0 auto;
   position: relative;
   color: #121217;
@@ -275,6 +279,7 @@ nav .nav-btn a:last-child {
 .property-card-container {
   margin: 24px 0 32px 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
 
@@ -291,8 +296,8 @@ nav .nav-btn a:last-child {
   max-width: 1152px;
 }
 
-.agents .agents-container h4,
-.agents .agents-container h2 {
+.agents .agents-container > h4,
+.agents .agents-container > h2 {
   margin-left: 0;
   text-align: left;
 }
@@ -302,6 +307,7 @@ nav .nav-btn a:last-child {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .view-all-btn-wrapper {
@@ -329,8 +335,9 @@ nav .nav-btn a:last-child {
 }
 
 .join-action {
-  padding: 52px 0 0 0;
+  padding: 52px 20px 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
 }
@@ -349,6 +356,18 @@ nav .nav-btn a:last-child {
   line-height: 24px;
   border-radius: 12px;
   background-color: #282833;
+}
+
+@media screen and (max-width: 1460px){
+  .agents{
+    padding: 82.5px 100px 0;
+  }
+}
+
+@media screen and (max-width: 1355px){
+  .agents{
+    padding: 82.5px 20px 0;
+  }
 }
 
 /*Mobile*/
@@ -405,13 +424,13 @@ nav .nav-btn a:last-child {
   }
 
   .about > h4,
-  .agents .agents-container h4 {
+  .agents .agents-container > h4 {
     font-size: 12px;
     line-height: 24px;
   }
 
   .about > h2,
-  .agents .agents-container h2 {
+  .agents .agents-container > h2 {
     font-size: 24px;
     line-height: 30px;
     width: 100%;
@@ -470,4 +489,32 @@ nav .nav-btn a:last-child {
     line-height: 24px;
   }
 
+  .property-card-section{
+    padding: 32px 20px;
+  }
+
+  .property-card-section h2{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .property-card-section h4{
+    font-size: 12px;
+  }
+
+  .agents {
+    padding: 32px 16px 0;
+  }
+
+  .agents-list {
+    margin: 32px 0 0 0;
+  }
+
+  .view-all-btn-wrapper a {
+    font-size: 14px;
+  }
+
+  .join-action{
+    padding: 52px 0 0;
+  }
 }
