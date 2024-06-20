@@ -129,6 +129,41 @@ footer > div {
   border-radius: 100%;
 }
 
+/*Screen 992px*/
+@media screen and (max-width: 1024px){
+  footer > div {
+    padding: 100px 96px 0;
+}
+
+  .footer-banner{
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .footer-banner h2 {
+    flex: 100% 0 0;
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  .footer-nav-container{
+    gap: 32px;
+  }
+
+  .footer-logo-container {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-logo{
+    margin: 0 auto 24px;
+    width: 119px;
+    height: 38px;
+  }
+
+}
+
 /*Mobile*/
 @media screen and (max-width: 640px) {
   .footer-banner {
@@ -156,22 +191,6 @@ footer > div {
   footer > div {
     position: relative;
     padding: 104px 16px 0;
-  }
-
-  .footer-nav-container{
-    gap: 32px;
-  }
-
-  .footer-logo-container {
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .footer-logo{
-    margin: 0 auto 24px;
-    width: 119px;
-    height: 38px;
   }
 
   .footer-nav-wrapper{
