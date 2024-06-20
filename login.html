@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Realty85</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" defer />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      defer
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+      rel="stylesheet"
+      defer
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body id="login-page">
+    <nav>
+      <a href="/login.html">Aren’t an agent with us?</a>
+      <a href="./login.html">Join us</a>
+    </nav>
+    <section class="login-section">
+      <div class="bg-container">
+        <!-- <img src="./assets/login-bg.jpg" alt="login bg"/> -->
+      </div>
+      <div class="bg-cover"></div>
+      <div class="login-container">
+        <div class="logo-container">
+          <img src="./assets/logo-dark.svg" alt="logo" />
+        </div>
+        <h1 class="title">Login</h1>
+        <form id="login-form">
+          <div class="input-wrapper">
+            <div class="input-icon">
+              <svg
+                width="16"
+                height="14"
+                viewBox="0 0 16 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 1.5L8 7.25L14.5 1.5M2.75 13.25H13.25C14.3546 13.25 15.25 12.3546 15.25 11.25V2.75C15.25 1.64543 14.3546 0.75 13.25 0.75H2.75C1.64543 0.75 0.75 1.64543 0.75 2.75V11.25C0.75 12.3546 1.64543 13.25 2.75 13.25Z"
+                  stroke="#8A8AA3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <input type="email" name="email" placeholder="enter email" />
+          </div>
+          <div class="input-wrapper">
+            <div class="input-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 5C7.5 3.067 9.067 1.5 11 1.5C12.933 1.5 14.5 3.067 14.5 5C14.5 6.933 12.933 8.5 11 8.5C10.7436 8.5 10.4944 8.47255 10.255 8.42071C10.0058 8.36674 9.74625 8.44309 9.56595 8.62339L9.18934 9H7.75C7.33579 9 7 9.33579 7 9.75V11.1893L6.18934 12H4.75C4.33579 12 4 12.3358 4 12.75V14.1893L3.68934 14.5H1.5V12.3107L7.37661 6.43405C7.55691 6.25375 7.63326 5.99419 7.57929 5.74498C7.52745 5.50557 7.5 5.25642 7.5 5ZM11 0C8.23858 0 6 2.23858 6 5C6 5.2192 6.01415 5.43541 6.04165 5.64769L0.21967 11.4697C0.0790176 11.6103 0 11.8011 0 12V15.25C0 15.6642 0.335786 16 0.75 16H4C4.19891 16 4.38968 15.921 4.53033 15.7803L5.28033 15.0303C5.42098 14.8897 5.5 14.6989 5.5 14.5V13.5H6.5C6.69891 13.5 6.88968 13.421 7.03033 13.2803L8.28033 12.0303C8.42098 11.8897 8.5 11.6989 8.5 11.5V10.5H9.5C9.69891 10.5 9.88968 10.421 10.0303 10.2803L10.3523 9.95835C10.5646 9.98585 10.7808 10 11 10C13.7614 10 16 7.76142 16 5C16 2.23858 13.7614 0 11 0ZM12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3Z" fill="#8A8AA3"/>
+                    </svg>
+            </div>
+            <input type="password" name="password" placeholder="enter password" />
+          </div>
+          <div class="forgot-password-wrapper">
+            <a href="/login">Forgot password?</a>
+          </div>
+          <input id="submit-btn" type="submit" value="Login"/>
+          <div class="help-link-wrapper">
+            <a class="help-link" href="/login.html">Need help?</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
