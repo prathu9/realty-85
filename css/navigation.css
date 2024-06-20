@@ -1,7 +1,7 @@
 header nav {
   position: relative;
-  height: 123px;
-  padding: 32px 48px;
+  height: 80px;
+  padding: 28px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,8 +9,8 @@ header nav {
 }
 
 .logo-container {
-  width: 184px;
-  height: 59px;
+  width: 109px;
+  height: 35px;
 }
 
 .logo-container img {
@@ -25,13 +25,13 @@ nav .main-nav {
   font-size: 18px;
   letter-spacing: 2.5%;
   line-height: 24px;
-  color: #fff;
   display: flex;
   gap: 16px;
 }
 
 nav .main-nav li a {
   padding: 12px 20px;
+  color: #000;
 }
 
 nav .nav-btn {
@@ -41,14 +41,14 @@ nav .nav-btn {
 
 nav .nav-btn a {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 8px 16px;
   color: #121217;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 2.5%;
   background-color: #f7f7f8;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 nav .nav-btn a:last-child {
