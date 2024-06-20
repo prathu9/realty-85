@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/property-card.css" />
     <link rel="stylesheet" href="./css/agent-card.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/tab.css">
+    <link rel="stylesheet" href="./css/buy.css">
 </head>
 <body>
     <header>
@@ -44,6 +46,23 @@
             </div>
           </nav>
     </header>
+    <main>
+      <div class="tab-container">
+        <h2>Buying</h2>
+        <div class="tab-wrapper">
+          <button class="tab-option" data-content-id="find-home">Find a home</button>
+          <button class="tab-option active" data-content-id="find-agent">Find an agent</button>
+        </div>
+      </div>
+      <div class="tab-content-wrapper">
+        <section id="find-home" class="tab-content">
+          <h1>Find home</h1>
+        </section>
+        <section id="find-agent" class="tab-content show">
+          <h1>Find agent</h1>
+        </section>
+      </div>
+    </main>
     <footer>
         <div class="footer-banner">
           <h2>Let’s get your house sold or help you buy your next one.</h2>
@@ -143,5 +162,6 @@
           </div>
         </div>
       </footer>
+      <script src="./js/tab.js"></script>
 </body>
 </html>

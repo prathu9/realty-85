@@ -1,0 +1,24 @@
+.tab-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-option{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    border:none;
+    cursor: pointer;
+}
+
+.tab-option.active{
+    border-bottom: 2px solid #E61E2B;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.show{
+    display: block;
+}
