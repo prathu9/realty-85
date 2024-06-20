@@ -39,7 +39,8 @@ nav .nav-btn {
   gap: 16px;
 }
 
-nav .nav-btn a {
+nav .nav-btn a,
+nav .nav-btn button {
   display: inline-block;
   padding: 8px 16px;
   color: #121217;
@@ -51,8 +52,9 @@ nav .nav-btn a {
   border-radius: 12px;
 }
 
-nav .nav-btn a:last-child {
+nav .nav-btn button {
   color: #fff;
+  border: none;
   background-color: #e61e2b;
 }
 
@@ -98,7 +100,7 @@ nav .nav-btn a:last-child {
     visibility: hidden;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   header nav {
     padding: 16px;
   }

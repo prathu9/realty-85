@@ -10,12 +10,12 @@ header nav {
   padding: 32px 48px;
 }
 
-nav .main-nav li a{
+nav .main-nav li a {
   color: #fff;
 }
 
-nav .nav-btn a{
-    color: #000;
+nav .nav-btn a {
+  color: #000;
 }
 
 .logo-container {
@@ -23,7 +23,8 @@ nav .nav-btn a{
   height: 59px;
 }
 
-nav .nav-btn a {
+nav .nav-btn a,
+nav .nav-btn button {
   padding: 12px 24px;
   font-size: 18px;
 }
@@ -263,8 +264,9 @@ header .overlay {
 }
 
 .about-image .about-name {
-  position: relative;
-  right: 40px;
+  position: absolute;
+  right: 42%;
+  bottom: 50px;
   width: 124px;
   height: 100%;
   display: flex;
@@ -278,6 +280,7 @@ header .overlay {
 
 .about-image .about-name .name {
   margin: 0 0 0 auto;
+  color: #121217;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
@@ -463,6 +466,114 @@ header .overlay {
   }
 }
 
+/*Screen 992px*/
+@media screen and (max-width: 992px) {
+  header nav {
+    padding: 16px;
+  }
+  nav .main-nav,
+  nav .nav-btn a,
+  nav .nav-btn button {
+    font-size: 16px;
+  }
+
+  .logo-container {
+    width: 123px;
+    height: 39px;
+  }
+  .hero-title {
+    margin: 60px 0 0 50px;
+    font-size: 50px;
+  }
+
+  .property-tab {
+    margin: 150px 0 0 50px;
+  }
+
+  .property-option-content {
+    width: 80%;
+  }
+
+  .property-option-content li .separator {
+    margin: 0 12px;
+  }
+
+  .property-option.price-range {
+    display: none;
+  }
+
+  .about > h2, .agents .agents-container > h2{
+      font-size: 40px;
+      line-height: 48px;
+  }
+
+  .about {
+    padding: 82.5px 50px 0 50px;
+  }
+
+  .about-wrapper{
+    padding: 40px 10px 50px 40px;
+    min-height: 320px;
+  }
+
+  .about-content h3 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about-content p {
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about-image .about-name {
+    right: 38%;
+    bottom: 40px;
+  }
+
+  .about-image .about-name .name{
+    font-size: 18px;
+  }
+}
+
+/*Screen 768px*/
+@media screen and (max-width: 768px){
+  .hero-title {
+    margin: 60px 0 0 50px;
+    font-size: 40px;
+  }
+
+  .property-tab {
+    margin: 50px 0 0 50px;
+  }
+
+ .property-option.property-type{
+  display: none;
+ }
+
+ .about {
+  padding: 82.5px 32px 0 32px;
+}
+ 
+ .about-content h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.about-content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.about-image .about-name .name{
+  font-size: 16px;
+}
+
+}
+
 /*Mobile*/
 
 @media screen and (max-width: 640px) {
@@ -506,6 +617,10 @@ header .overlay {
 
   header .bg-image .location-box {
     display: none;
+  }
+
+  .property-option-content {
+    width: 98%;
   }
 
   .property-tab {
@@ -552,7 +667,7 @@ header .overlay {
 
   .about-wrapper {
     margin: 32px auto 0 auto;
-    padding: 24px 23px 91px;
+    padding: 40px 23px 91px;
     gap: 22px;
   }
 
@@ -560,24 +675,13 @@ header .overlay {
     flex: 100% 0 0;
   }
 
-  .about-content h3 {
-    margin: 0 0 16px 0;
-    font-size: 16px;
-    line-height: 32px;
-  }
-
-  .about-content p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
   .about-wrapper .about-image {
     margin: 120px 0 0 0;
   }
 
   .about-image .about-name {
-    top: -38px;
-    right: 5px;
+    right: 40%;
+    bottom: 120px;
   }
 
   .about-image-wrapper {
@@ -649,5 +753,15 @@ header .overlay {
 
   .join-action {
     padding: 52px 0 0;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .about-wrapper .about-image {
+    height: 50px;
+}
+
+  .about-image .about-name {
+    right: 50%;
   }
 }
