@@ -46,6 +46,9 @@ nav .nav-btn a{
 }
 
 .hero h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
     color: rgba(255,255,255,0.5);
 }
 
@@ -86,11 +89,11 @@ nav .nav-btn a{
     position: relative;
     top: 113.5px;
     max-width: 1080px;
+    width: 75%;
     aspect-ratio:1.8;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0px 25px 50px -12px #12121740;
-    
 }
 
 .hero-image-wrapper img{
@@ -152,11 +155,12 @@ section .image-section img{
 
 /*Sections 1*/
 .section-1{
-    margin: 152px 32px 0 32px;
+    margin: 152px 0 0 0;
     padding: 82.5px 32px 0 32px;
 }
 
 .section-1-main{
+    width: 90%;
     display: flex;
     gap:56px;
     flex-wrap: wrap;
@@ -165,8 +169,8 @@ section .image-section img{
 }
 
 .section-1 .para-container{
-    max-width: 448px;
-    flex: 448px 0 0;
+    max-width: 444px;
+    flex: 38% 0 0;
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
@@ -178,17 +182,29 @@ section .image-section img{
 
 .section-1 .quote-container{
     position: relative;
-    flex: 495px 0 0;
+    flex: 48% 0 0;
     aspect-ratio: 1.5;
-    padding: 32px 40px;
+    /* padding: 32px 40px;
     background: #000 url("../assets/ceo-image.jpg") no-repeat;
     background-size: 85%;
-    background-position: 200% 20%;
+    background-position: 200% 20%; */
     border-radius: 12px;
     overflow: hidden;
+    background-color: #000;
 }
 
-.quote-container:after{
+.quote-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.quote-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* .quote-container:after{
     content: "";
     position: absolute;
     top: 0px;
@@ -229,7 +245,7 @@ section .image-section img{
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-}
+} */
 
 
 /*Section 2*/
@@ -431,6 +447,87 @@ section .image-section img{
     object-fit: cover;
 }
 
+@media screen and (max-width: 1150px) {
+    .section-1-main {
+        gap: 40px;
+    }
+    .section-1 .quote-container{
+        position: relative;
+        flex: 55% 0 0;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .hero-top-bar h2 {
+        font-size: 18px;
+    }
+
+    .hero {
+        min-height: 750px;
+    }
+
+    .hero h3{
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        max-width: 600px;
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .hero-btn-wrapper {
+        font-size: 14px;
+    }
+
+    .hero-btn-wrapper a {
+        padding: 8px 18px;
+        border-radius: 14px;
+    }
+
+    /*Section*/
+    section > h3 {
+        font-size: 12px;
+    }
+
+    section > h2 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    /*Section 1*/
+    .section-1 {
+        margin: 80px 0 0 0;
+    }
+
+    .section-1 .para-container {
+        max-width: 444px;
+        flex: 38% 0 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .section-1 .quote-container{
+        position: relative;
+        flex: 55% 0 0;
+    }
+
+    .quote-wrapper q {
+        max-width: 220px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .author-detail {
+        font-size: 14px;
+    }
+
+    .author-detail span:last-child{
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 880px){
     .agent-stories-wrapper{
         justify-content: center;
@@ -439,6 +536,35 @@ section .image-section img{
     .agent-stories-wrapper .video-container{
         flex: 44% 0 0;
     }
+
+    .section-1 .quote-container {
+        padding: 16px 20px;
+    }
+
+    .quote-wrapper q {
+        max-width: 200px;
+    }
+
+    .author-detail {
+        font-size: 12px;
+    }
+
+    .author-detail span:last-child{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .section-1 .para-container,
+    .section-1 .quote-container {
+        flex: 100% 0 0;
+    }
+
+    .section-1 .quote-container {
+        max-width: 486px;
+        padding: 32px 40px;
+    }
+
 }
 
 @media screen and (max-width: 640px){
