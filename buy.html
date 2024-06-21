@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/tab.css">
     <link rel="stylesheet" href="./css/buy.css">
+    <link rel="stylesheet" href="./css/getting-started.css">
 </head>
 <body>
     <header>
@@ -34,7 +35,7 @@
             </ul>
             <div class="nav-btn">
               <a>Agent Login</a>
-              <a>Get Started</a>
+              <button id="get-started-btn">Get Started</button>
             </div>
             <div class="hamburger-menu">
               <label for="menu-btn">
@@ -162,6 +163,85 @@
           </div>
         </div>
       </footer>
+      <div class="get-started-popup-wrapper">
+        <div class="get-started-popup">
+          <button id="get-started-close">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.25 0.75L0.75 11.25M0.75 0.75L11.25 11.25" stroke="#8A8AA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+          <h2>Get started with Realty85</h2>
+          <form>
+            <div class="property-action-wrapper">
+              <input id="buy" type="radio" name="propertyAction" value="buy"/>
+              <label for="buy">
+                <span>Buy</span>
+                <span>I want to buy</span>
+              </label>
+              <input id="sell" type="radio" name="propertyAction" value="sell"/>
+              <label for="sell">
+                <span>Sell</span>
+                <span>I want to sell</span>
+              </label>
+              <input id="rent" type="radio" name="propertyAction" value="rent"/>
+              <label for="rent">
+                <span>Rent</span>
+                <span>I want to rent</span>
+              </label>
+              <div class="separator"></div>
+              <input id="agent" type="radio" name="propertyAction" value="agent"/>
+              <label for="agent">
+                <span>Agent</span>
+                <span>I want to agent</span>
+              </label>
+            </div>
+            <div class="input-field-wrapper">
+              <h3>
+                Fill out the form below and we will reach out within 24 hours.
+              </h3>
+              <div class="input-wrapper">
+                <div class="input-icon">
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.7497 4C11.7497 5.79493 10.2947 7.25 8.49973 7.25C6.7048 7.25 5.24973 5.79493 5.24973 4C5.24973 2.20507 6.7048 0.75 8.49973 0.75C10.2947 0.75 11.7497 2.20507 11.7497 4Z" stroke="#8A8AA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.34723 15.25H13.6522C14.7941 15.25 15.6738 14.2681 15.1405 13.2584C14.3561 11.7731 12.5677 10 8.49973 10C4.43174 10 2.64339 11.7731 1.85897 13.2584C1.3257 14.2681 2.20531 15.25 3.34723 15.25Z" stroke="#8A8AA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <input type="text" name="name" placeholder="Name" />
+              </div>
+              <div class="input-wrapper">
+                <div class="input-icon">
+                  <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 1.5L8.5 7.25L15 1.5M3.25 13.25H13.75C14.8546 13.25 15.75 12.3546 15.75 11.25V2.75C15.75 1.64543 14.8546 0.75 13.75 0.75H3.25C2.14543 0.75 1.25 1.64543 1.25 2.75V11.25C1.25 12.3546 2.14543 13.25 3.25 13.25Z" stroke="#8A8AA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <input type="text" name="email" placeholder="Email" />
+              </div>
+              <div class="input-wrapper">
+                <div class="input-icon">
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.39286 0.75H2.56818C1.84017 0.75 1.25 1.34017 1.25 2.06818C1.25 9.3483 7.1517 15.25 14.4318 15.25C15.1598 15.25 15.75 14.6598 15.75 13.9318V11.1071L12.6429 9.03571L11.0317 10.6468C10.7519 10.9267 10.3337 11.0137 9.9821 10.8321C9.38579 10.524 8.41815 9.94521 7.46429 9.03571C6.48768 8.10454 5.91548 7.10114 5.62829 6.49395C5.46734 6.15368 5.56052 5.76091 5.82669 5.49474L7.46429 3.85714L5.39286 0.75Z" stroke="#8A8AA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <input type="text" name="phoneNumber" placeholder="Phone number" />
+              </div>
+              <div class="input-wrapper">
+                <div class="input-icon">
+                  <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.75 7C13.75 11 7.5 15.25 7.5 15.25C7.5 15.25 1.25 11 1.25 7C1.25 3.5 4.18629 0.75 7.5 0.75C10.8137 0.75 13.75 3.5 13.75 7Z" stroke="#8A8AA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.75 7C9.75 8.24264 8.74264 9.25 7.5 9.25C6.25736 9.25 5.25 8.24264 5.25 7C5.25 5.75736 6.25736 4.75 7.5 4.75C8.74264 4.75 9.75 5.75736 9.75 7Z" stroke="#8A8AA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <input type="text" name="city" placeholder="City you are looking to buy in" />
+              </div>
+              <input id="get-started-submit" type="submit" value="Submit">
+            </div>
+            <div class="get-start-help-wrapper">
+              <a class="get-start-help" href="/login.html">Need help?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="./js/getting-started.js"></script>
       <script src="./js/tab.js"></script>
 </body>
 </html>

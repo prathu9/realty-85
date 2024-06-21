@@ -1,139 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Realty 85</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/navigation.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/realty-85.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" defer />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      defer
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+      rel="stylesheet"
+      defer
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navigation.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/realty-85.css" />
+    <link rel="stylesheet" href="./css/getting-started.css" />
+  </head>
+
+  <body>
     <header>
-        <nav>
-            <div class="logo-container">
+      <nav>
+        <div class="logo-container">
+          <img src="./assets/logo.svg" alt="logo" />
+        </div>
+        <ul class="main-nav">
+          <li>
+            <a href="/buy.html">Buy</a>
+            <a>Sell</a>
+            <a>Rent</a>
+          </li>
+        </ul>
+        <div class="nav-btn">
+          <a>Agent Login</a>
+          <button id="get-started-btn">Get Started</button>
+        </div>
+        <div class="hamburger-menu">
+          <label for="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="menu-btn" type="checkbox" />
+        </div>
+      </nav>
+      <div class="hero-top-bar">
+        <h2>Work with Realty85</h2>
+        <a href="./realty-85.html">Apply Now</a>
+      </div>
+      <div class="hero">
+        <h3>Become a Realty 85 Agent</h3>
+        <h1>This is a title about why you should be a Realty85 Agent</h1>
+        <div class="hero-btn-wrapper">
+          <a href="/realty-85.html">Apply Now</a>
+          <a href="/realty-85.html">
+            <span>See Why</span>
+            <span
+              ><svg
+                width="14"
+                height="15"
+                viewBox="0 0 14 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.25 7.5L0.75 1.25V13.75L13.25 7.5Z"
+                  stroke="white"
+                  stroke-opacity="0.5"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></span>
+          </a>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="./assets/hero-realty-bg.jpg" alt="hero" />
+        </div>
+      </div>
+    </header>
+    <section class="section-1">
+      <h3>Agents for Agents</h3>
+      <h2>This is a title about this section</h2>
+      <div class="section-1-main">
+        <div class="para-container">
+          <p>
+            In an ever-changing industry, the legacy brokerage models continue
+            to lose market share to companies like ours.
+          </p>
+          <p>
+            Agents realize hefty corporate salaries and shareholder success no
+            longer translate to their individual success.
+          </p>
+        </div>
+        <div class="quote-container">
+          <div class="quote-wrapper">
+            <div class="quote">
+              <q>
+                Instead of a salary, I make my money the exact same way as
+                everybody else.
+              </q>
+              <div class="author-detail">
+                <span class="author">Jacob Chapman</span><br />
+                <span class="designation">CEO of Realty85</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image-section">
+        <img src="./assets/section-1-realty-bg.jpg" alt="section-1 image" />
+      </div>
+    </section>
+    <section class="section-2">
+      <h3>Earn</h3>
+      <h2>Build wealth with passive income</h2>
+      <div class="section-2-main">
+        <p>
+          Recent studies have shown that the notion that most millionaires are
+          born into wealth is a myth. In fact, over two-thirds of millionaires
+          are self-made, according to a 2019 study by Wealth-X and a study by
+          Fidelity Investments. May 8, 2023
+        </p>
+        <h3>
+          How are 90% of millionaires made? By owning real estate and creating
+          parallel streams of income with appreciable assets.
+        </h3>
+        <p>
+          Most real estate agents understand this fact and it is what attracted
+          them to the business. The successful agents have done this
+          instinctively over time by parlaying their earnings into appreciable
+          assets. Finally, the game has changed. Our agents can start building a
+          parallel income stream on day one of their career.
+        </p>
+        <div class="roadmap">
+          <div class="step">
+            <h4>Step 1</h4>
+            <h3>Sell Real Estate</h3>
+            <p>
+              The agent keeps 80% (or $60,000) of the first $75,000 in gross
+              commissions earned annually. Agent keeps 100% of gross commissions
+              earned beyond $75,000.
+            </p>
+          </div>
+          <div class="step">
+            <h4>Step 2</h4>
+            <h3>Onboard new agents</h3>
+            <p>
+              Start building your team of agents from around the country and you
+              could earn profit share checks from Day 1.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="image-section">
+        <img src="./assets/section-2-realty-bg.jpg" alt="section-1 image" />
+      </div>
+    </section>
+    <section class="section-3">
+      <h3>Income Comparison Tool</h3>
+      <h2>Compare us against your current brokerage</h2>
+      <div class="section-3-main">
+        <p>
+          Even though our culture is second to none, it boils down to the
+          dollars and cents. For an “apples to apples” comparison, spend some
+          time with the comparison calculator and determine if the math works in
+          your favor at your current brokerage.
+        </p>
+        <a href="/realty-85.html">Calculate it</a>
+      </div>
+      <div class="image-section">
+        <img src="./assets/section-3-realty-bg.jpg" alt="section-1 image" />
+      </div>
+    </section>
+    <section class="section-4">
+      <h3>Marketing Tools</h3>
+      <h2>We have you covered on the whole sales process</h2>
+      <div class="section-4-main">
+        <div class="marketing-tool-container">
+          <h4>Leads</h4>
+          <h3>The lifeblood of every sales organization</h3>
+          <p>
+            These are a details about this specific benefit to the user. These
+            are a details about this specific benefit to the user.
+          </p>
+          <div class="marketing-tool-wrapper">
+            <div class="marketing-tool">
+              <div class="title">
+                <h5>Ad Spends</h5>
+                <h3>Crowd-Funding Ad Spends</h3>
+              </div>
+              <div class="arrow-wrapper">
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.29297 1.625L12.8763 6L8.29297 10.375M12.668 6H0.792969"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="marketing-tool">
+              <div class="title">
+                <h5>Ad Spends</h5>
+                <h3>Personalize Ad Campaigns</h3>
+              </div>
+              <div class="arrow-wrapper">
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.29297 1.625L12.8763 6L8.29297 10.375M12.668 6H0.792969"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="marketing-tool">
+              <div class="title">
+                <h5>Ad Spends</h5>
+                <h3>Automated Lead Follow-Up</h3>
+              </div>
+              <div class="arrow-wrapper">
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.29297 1.625L12.8763 6L8.29297 10.375M12.668 6H0.792969"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="marketing-tool-container">
+          <h4>Tools</h4>
+          <h3>Helpful tools to organize the sales process</h3>
+          <p>
+            Embracing organized teamwork and leveraging helpful automation tools not only streamlines the sales process but also translates into more frequent and lucrative paydays for real estate professionals.
+          </p>
+          <div class="marketing-tool-wrapper">
+            <div class="marketing-tool">
+              <div class="title">
+                <h5>Ad Spends</h5>
+                <h3>Doc Vault</h3>
+              </div>
+              <div class="arrow-wrapper">
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.29297 1.625L12.8763 6L8.29297 10.375M12.668 6H0.792969"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="marketing-tool">
+              <div class="title">
+                <h5>Ad Spends</h5>
+                <h3>Mentorship Programs</h3>
+              </div>
+              <div class="arrow-wrapper">
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.29297 1.625L12.8763 6L8.29297 10.375M12.668 6H0.792969"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="marketing-tool">
+              <div class="title">
+                <h5>Ad Spends</h5>
+                <h3>Get Paid at Closing</h3>
+              </div>
+              <div class="arrow-wrapper">
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.29297 1.625L12.8763 6L8.29297 10.375M12.668 6H0.792969"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="marketing-tool-container">
+          <h4>Marketing</h4>
+          <h3>Client facing marketing & social media content</h3>
+          <p>
+            By offering personalized client-facing materials and social media content, we empower our agents to build their own brand and connect with clients on a more personal level.
+          </p>
+          <div class="marketing-tool-wrapper">
+            <div class="marketing-tool">
+              <div class="title">
+                <h5>Ad Spends</h5>
+                <h3>Personalized Website</h3>
+              </div>
+              <div class="arrow-wrapper">
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.29297 1.625L12.8763 6L8.29297 10.375M12.668 6H0.792969"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="marketing-tool">
+              <div class="title">
+                <h5>Ad Spends</h5>
+                <h3>Social Media Content Library</h3>
+              </div>
+              <div class="arrow-wrapper">
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.29297 1.625L12.8763 6L8.29297 10.375M12.668 6H0.792969"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="marketing-tool">
+              <div class="title">
+                <h5>Ad Spends</h5>
+                <h3>Social Media Creation Tool</h3>
+              </div>
+              <div class="arrow-wrapper">
+                <svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.29297 1.625L12.8763 6L8.29297 10.375M12.668 6H0.792969"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-5">
+        <h3>Agent Stories</h3>
+        <h2>This is a title about our agents</h2>
+        <div class="agent-stories-wrapper">
+            <div class="video-container">
+                <img src="./assets/video-thumbnail.png" alt="video thumbnail"/>
+            </div>
+            <div class="video-container">
+                <img src="./assets/video-thumbnail.png" alt="video thumbnail"/>
+            </div>
+            <div class="video-container">
+                <img src="./assets/video-thumbnail.png" alt="video thumbnail"/>
+            </div>
+            <div class="video-container">
+                <img src="./assets/video-thumbnail.png" alt="video thumbnail"/>
+            </div>
+        </div>
+    </section>
+    <footer>
+      <div class="footer-banner">
+        <h2>Let’s get your house sold or help you buy your next one.</h2>
+        <div class="btn-container">
+          <a>Buy a home</a>
+          <a>Sell my home</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-nav-container">
+          <div class="footer-logo-container">
+            <div class="footer-logo">
               <img src="./assets/logo.svg" alt="logo" />
             </div>
-            <ul class="main-nav">
+            <p>
+              This is a quick description to help with SEO text will go here
+            </p>
+          </div>
+          <div class="footer-nav-wrapper">
+            <ul class="footer-nav">
               <li>
-                <a href="/buy.html">Buy</a>
-                <a>Sell</a>
-                <a>Rent</a>
+                <h3>Title List</h3>
+              </li>
+              <li>
+                <a>LinkLink</a>
+              </li>
+              <li>
+                <a>Another Link</a>
+              </li>
+              <li>
+                <a>This Link</a>
+              </li>
+              <li>
+                <a>This Link</a>
               </li>
             </ul>
-            <div class="nav-btn">
-              <a>Agent Login</a>
-              <a>Get Started</a>
-            </div>
-            <div class="hamburger-menu">
-              <label for="menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-              <input id="menu-btn" type="checkbox" />
-            </div>
-          </nav>
-    </header>
-    <footer>
-        <div class="footer-banner">
-          <h2>Let’s get your house sold or help you buy your next one.</h2>
-          <div class="btn-container">
-            <a>Buy a home</a>
-            <a>Sell my home</a>
+            <ul class="footer-nav">
+              <li>
+                <h3>Title List</h3>
+              </li>
+              <li>
+                <a href="">LinkLink</a>
+              </li>
+              <li>
+                <a>Another Link</a>
+              </li>
+              <li>
+                <a>This Link</a>
+              </li>
+              <li>
+                <a>This Link</a>
+              </li>
+            </ul>
+            <ul class="footer-nav">
+              <li>
+                <h3>Title List</h3>
+              </li>
+              <li>
+                <a>LinkLink</a>
+              </li>
+              <li>
+                <a>Another Link</a>
+              </li>
+              <li>
+                <a>This Link</a>
+              </li>
+              <li>
+                <a>This Link</a>
+              </li>
+            </ul>
+            <ul class="footer-nav">
+              <li>
+                <h3>Title List</h3>
+              </li>
+              <li>
+                <a>LinkLink</a>
+              </li>
+              <li>
+                <a>Another Link</a>
+              </li>
+              <li>
+                <a>This Link</a>
+              </li>
+              <li>
+                <a>This Link</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div>
-          <div class="footer-nav-container">
-            <div class="footer-logo-container">
-              <div class="footer-logo">
-                <img src="./assets/logo.svg" alt="logo" />
+        <div class="legal-info">
+          <div class="copyright-text">&copy;2024 Realty85</div>
+          <div class="terms">
+            <a>Privacy Policy</a>
+            <span class="spacer"></span>
+            <a>Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="get-started-popup-wrapper">
+      <div class="get-started-popup">
+        <button id="get-started-close">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.25 0.75L0.75 11.25M0.75 0.75L11.25 11.25"
+              stroke="#8A8AA3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <h2>Get started with Realty85</h2>
+        <form>
+          <div class="property-action-wrapper">
+            <input id="buy" type="radio" name="propertyAction" value="buy" />
+            <label for="buy">
+              <span>Buy</span>
+              <span>I want to buy</span>
+            </label>
+            <input id="sell" type="radio" name="propertyAction" value="sell" />
+            <label for="sell">
+              <span>Sell</span>
+              <span>I want to sell</span>
+            </label>
+            <input id="rent" type="radio" name="propertyAction" value="rent" />
+            <label for="rent">
+              <span>Rent</span>
+              <span>I want to rent</span>
+            </label>
+            <div class="separator"></div>
+            <input
+              id="agent"
+              type="radio"
+              name="propertyAction"
+              value="agent"
+            />
+            <label for="agent">
+              <span>Agent</span>
+              <span>I want to agent</span>
+            </label>
+          </div>
+          <div class="input-field-wrapper">
+            <h3>
+              Fill out the form below and we will reach out within 24 hours.
+            </h3>
+            <div class="input-wrapper">
+              <div class="input-icon">
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.7497 4C11.7497 5.79493 10.2947 7.25 8.49973 7.25C6.7048 7.25 5.24973 5.79493 5.24973 4C5.24973 2.20507 6.7048 0.75 8.49973 0.75C10.2947 0.75 11.7497 2.20507 11.7497 4Z"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.34723 15.25H13.6522C14.7941 15.25 15.6738 14.2681 15.1405 13.2584C14.3561 11.7731 12.5677 10 8.49973 10C4.43174 10 2.64339 11.7731 1.85897 13.2584C1.3257 14.2681 2.20531 15.25 3.34723 15.25Z"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
-              <p>
-                This is a quick description to help with SEO text will go here
-              </p>
+              <input type="text" name="name" placeholder="Name" />
             </div>
-            <div class="footer-nav-wrapper">
-              <ul class="footer-nav">
-                <li>
-                  <h3>Title List</h3>
-                </li>
-                <li>
-                  <a>LinkLink</a>
-                </li>
-                <li>
-                  <a>Another Link</a>
-                </li>
-                <li>
-                  <a>This Link</a>
-                </li>
-                <li>
-                  <a>This Link</a>
-                </li>
-              </ul>
-              <ul class="footer-nav">
-                <li>
-                  <h3>Title List</h3>
-                </li>
-                <li>
-                  <a href="">LinkLink</a>
-                </li>
-                <li>
-                  <a>Another Link</a>
-                </li>
-                <li>
-                  <a>This Link</a>
-                </li>
-                <li>
-                  <a>This Link</a>
-                </li>
-              </ul>
-              <ul class="footer-nav">
-                <li>
-                  <h3>Title List</h3>
-                </li>
-                <li>
-                  <a>LinkLink</a>
-                </li>
-                <li>
-                  <a>Another Link</a>
-                </li>
-                <li>
-                  <a>This Link</a>
-                </li>
-                <li>
-                  <a>This Link</a>
-                </li>
-              </ul>
-              <ul class="footer-nav">
-                <li>
-                  <h3>Title List</h3>
-                </li>
-                <li>
-                  <a>LinkLink</a>
-                </li>
-                <li>
-                  <a>Another Link</a>
-                </li>
-                <li>
-                  <a>This Link</a>
-                </li>
-                <li>
-                  <a>This Link</a>
-                </li>
-              </ul>
+            <div class="input-wrapper">
+              <div class="input-icon">
+                <svg
+                  width="17"
+                  height="14"
+                  viewBox="0 0 17 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 1.5L8.5 7.25L15 1.5M3.25 13.25H13.75C14.8546 13.25 15.75 12.3546 15.75 11.25V2.75C15.75 1.64543 14.8546 0.75 13.75 0.75H3.25C2.14543 0.75 1.25 1.64543 1.25 2.75V11.25C1.25 12.3546 2.14543 13.25 3.25 13.25Z"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <input type="text" name="email" placeholder="Email" />
             </div>
+            <div class="input-wrapper">
+              <div class="input-icon">
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.39286 0.75H2.56818C1.84017 0.75 1.25 1.34017 1.25 2.06818C1.25 9.3483 7.1517 15.25 14.4318 15.25C15.1598 15.25 15.75 14.6598 15.75 13.9318V11.1071L12.6429 9.03571L11.0317 10.6468C10.7519 10.9267 10.3337 11.0137 9.9821 10.8321C9.38579 10.524 8.41815 9.94521 7.46429 9.03571C6.48768 8.10454 5.91548 7.10114 5.62829 6.49395C5.46734 6.15368 5.56052 5.76091 5.82669 5.49474L7.46429 3.85714L5.39286 0.75Z"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                name="phoneNumber"
+                placeholder="Phone number"
+              />
+            </div>
+            <div class="input-wrapper">
+              <div class="input-icon">
+                <svg
+                  width="15"
+                  height="16"
+                  viewBox="0 0 15 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.75 7C13.75 11 7.5 15.25 7.5 15.25C7.5 15.25 1.25 11 1.25 7C1.25 3.5 4.18629 0.75 7.5 0.75C10.8137 0.75 13.75 3.5 13.75 7Z"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.75 7C9.75 8.24264 8.74264 9.25 7.5 9.25C6.25736 9.25 5.25 8.24264 5.25 7C5.25 5.75736 6.25736 4.75 7.5 4.75C8.74264 4.75 9.75 5.75736 9.75 7Z"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                name="city"
+                placeholder="City you are looking to buy in"
+              />
+            </div>
+            <input id="get-started-submit" type="submit" value="Submit" />
           </div>
-          <div class="legal-info">
-            <div class="copyright-text">&copy;2024 Realty85</div>
-            <div class="terms">
-              <a>Privacy Policy</a>
-              <span class="spacer"></span>
-              <a>Terms and Conditions</a>
-            </div>
+          <div class="get-start-help-wrapper">
+            <a class="get-start-help" href="/login.html">Need help?</a>
           </div>
-        </div>
-      </footer>
-</body>
+        </form>
+      </div>
+    </div>
+    <script src="./js/getting-started.js"></script>
+  </body>
 </html>
