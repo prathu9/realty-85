@@ -1,0 +1,80 @@
+main{
+    min-height: 1024px;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.form-container{
+    height: 100%;
+    margin: 141px 0 0 0;
+    flex: 64.2% 0 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.logo-container{
+    width: 125px;
+    height: 40px;
+}
+
+.form-container h1{
+    max-width: 480px;
+    width: 100%;
+    height: 100%;
+    margin: 52px 0 32px 0;
+    font-family: "Krona One", sans-serif;
+    font-size: 45px;
+    line-height: 56.25px;
+}
+
+form{
+    max-width: 480px;
+    width: 100%;
+    height: 100%;
+}
+
+form .textarea-wrapper{
+    height:176px;
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    padding: 8px 16px;
+    resize: none;
+    font-family: "montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 1px solid #D1D1DB;
+    border-radius: 8px;
+}
+
+#apply-form-submit{
+    margin: 32px 0 0 0;
+    padding: 12px 0;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    border: none;
+    border-radius: 12px;
+    background-color: #E61E2B;
+    letter-spacing: 0.025em;
+}
+
+.image-container{
+    flex: 35.8% 0 0;
+    height: 100%;
+}
+
+.image-container img{
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+}
