@@ -29,6 +29,10 @@ nav .nav-btn button {
   font-size: 18px;
 }
 
+.cover{
+  height: 552px;
+}
+
 header .bg-image {
   width: 100%;
   height: 100%;
@@ -581,12 +585,21 @@ header .overlay {
     padding: 0;
     height: fit-content;
     background-color: #212123;
+    overflow: visible;
+  }
+
+  header nav {
+    height: 72px;
+  }
+
+  .cover{
+    overflow: hidden;
   }
 
   .hero-title {
     position: relative;
     margin: 31px 32px 0 0;
-    padding: 16px;
+    padding: 0 16px 16px;
     max-width: 100%;
     font-size: 28px;
     font-weight: 400;

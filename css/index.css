@@ -21,5 +21,8 @@ body {
   color: #121217;
 }
 
+body.no-scroll{
+  overflow: hidden;
+}
 
 

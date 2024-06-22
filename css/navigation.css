@@ -5,7 +5,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 5;
 }
 
 .logo-container {
@@ -40,7 +40,9 @@ nav .nav-btn {
 }
 
 nav .nav-btn a,
-nav .nav-btn button {
+nav .nav-btn button,
+.mobile-nav li:nth-child(4) a,
+.mobile-nav li:nth-child(5) button {
   display: inline-block;
   padding: 8px 16px;
   color: #121217;
@@ -52,7 +54,8 @@ nav .nav-btn button {
   border-radius: 12px;
 }
 
-nav .nav-btn button {
+nav .nav-btn button,
+.mobile-nav li:nth-child(5) button {
   color: #fff;
   border: none;
   background-color: #e61e2b;
@@ -67,16 +70,17 @@ nav .nav-btn button {
     overflow: hidden;
 }
 
-.hamburger-menu label{
-    position: relative;
-    display: block;
-    width: 48px;
+#mobile-nav-btn{
+  width: 48px;
     height: 48px;
-    background-color: #E61E2B;
-    cursor: pointer;
+  position: relative;
+  background-color: #E61E2B;
+  cursor: pointer;
+  border: none;
+  z-index:20;
 }
 
-.hamburger-menu label span{
+#mobile-nav-btn span{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,19 +90,74 @@ nav .nav-btn button {
     height: 1.5px;
     border-radius: 100px;
     background-color: #fff;
+    transition: all 150ms;
 }
 
-.hamburger-menu label span:first-child{
+#mobile-nav-btn span:first-child{
     top: 37%;
 }
 
-.hamburger-menu label span:last-child{
+#mobile-nav-btn span:last-child{
     top: 63%;
 }
 
+#mobile-nav-btn.active span:first-child{
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
 
-.hamburger-menu input{
-    visibility: hidden;
+#mobile-nav-btn.active span:nth-child(2){
+  display: none;
+}
+
+#mobile-nav-btn.active span:last-child{
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mobile-nav{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  z-index: 10;
+}
+
+.mobile-nav.open{
+  display: flex;
+}
+
+.mobile-nav li{
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-nav li a{
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mobile-nav li a:hover{
+  background-color: rgba(255,255,255,0.2);
+}
+
+.mobile-nav li:nth-child(4) a,
+.mobile-nav li:nth-child(5) button{
+  width: 200px;
+  margin: 8px 0 0 0;
+} 
+
+.mobile-nav li:nth-child(4) a:hover{
+  background-color: #f7f7f8;
 }
 
 @media screen and (max-width: 768px) {

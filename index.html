@@ -34,8 +34,8 @@
         <ul class="main-nav">
           <li>
             <a href="/buy.html">Buy</a>
-            <a>Sell</a>
-            <a>Rent</a>
+            <a href="/sell.html">Sell</a>
+            <a href="./rent.html">Rent</a>
           </li>
         </ul>
         <div class="nav-btn">
@@ -43,15 +43,32 @@
           <button id="get-started-btn">Get Started</button>
         </div>
         <div class="hamburger-menu">
-          <label for="menu-btn">
+          <button id="mobile-nav-btn">
             <span></span>
             <span></span>
             <span></span>
-          </label>
-          <input id="menu-btn" type="checkbox" />
+          </button>
         </div>
+        <ul class="mobile-nav">
+          <li>
+            <a href="/buy.html">Buy</a>
+          </li>
+          <li>
+            <a href="/sell.html">Sell</a>
+          </li>
+          <li>
+            <a href="./rent.html">Rent</a>
+          </li>
+          <li>
+              <a href="./agent-apply.html">Agent Login</a>
+          </li>
+          <li>
+            <button id="get-started-mob-btn">Get Started</button>
+          </li>
+        </ul>
       </nav>
-      <div class="overlay"></div>
+      <div class="cover">
+        <div class="overlay"></div>
       <h1 class="hero-title">We help you Buy, Sell & Rent your home</h1>
 
       <div class="property-tab">
@@ -135,6 +152,7 @@
           >
           <span>1234 Street Rd</span>
         </div>
+      </div>
       </div>
     </header>
     <section class="about">
@@ -561,5 +579,6 @@
       </div>
     </div>
     <script src="./js/getting-started.js"></script>
+    <script src="./js/mobile-nav.js"></script>
   </body>
 </html>
