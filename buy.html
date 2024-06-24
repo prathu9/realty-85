@@ -77,19 +77,238 @@
       <div class="tab-container">
         <h2>Buying</h2>
         <div class="tab-wrapper">
-          <button class="tab-option" data-content-id="find-home">
+          <button class="tab-option active" data-content-id="find-home">
             Find a home
           </button>
-          <button class="tab-option active" data-content-id="find-agent">
+          <button class="tab-option" data-content-id="find-agent">
             Find an agent
           </button>
         </div>
       </div>
       <div class="tab-content-wrapper">
-        <section id="find-home" class="tab-content">
-          <h1>Find home</h1>
+        <section id="find-home" class="tab-content show">
+          <div class="top-bar">
+            <div class="map-search-wrapper">
+              <span class="search-icon-wrapper">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.25 15.25L11.5 11.5M0.75 7C0.75 3.54822 3.54822 0.75 7 0.75C10.4518 0.75 13.25 3.54822 13.25 7C13.25 10.4518 10.4518 13.25 7 13.25C3.54822 13.25 0.75 10.4518 0.75 7Z"
+                    stroke="#8A8AA3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+
+              <input
+                id="map-search"
+                type="text"
+                placeholder="Search by address, city or zip code"
+              />
+            </div>
+            <div class="filter-wrapper">
+              <div class="select-wrapper">
+                <select name="price-filter" id="price-filter" required>
+                  <option value="" disabled selected>Price</option>
+                  <option value="">Item 1</option>
+                </select>
+                <span class="select-caret">
+                  <svg
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.25 0.75L4 4.25L0.75 0.75"
+                      stroke="#8A8AA3"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="select-wrapper">
+                <select name="bed-filter" id="bed-filter" required>
+                  <option value="" disabled selected>Beds</option>
+                </select>
+                <span class="select-caret">
+                  <svg
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.25 0.75L4 4.25L0.75 0.75"
+                      stroke="#8A8AA3"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="select-wrapper">
+                <select name="bath-filter" id="bath-filter" required>
+                  <option value="" disabled selected>Bath</option>
+                </select>
+                <span class="select-caret">
+                  <svg
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.25 0.75L4 4.25L0.75 0.75"
+                      stroke="#8A8AA3"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <button id="filter-btn">
+                <span>Filters</span>
+                <span>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 8H7.25M12.75 8H19.25M4.75 16H12.25M17.75 16H19.25M12.25 8C12.25 9.24264 11.2426 10.25 10 10.25C8.75736 10.25 7.75 9.24264 7.75 8C7.75 6.75736 8.75736 5.75 10 5.75C11.2426 5.75 12.25 6.75736 12.25 8ZM17.25 16C17.25 17.2426 16.2426 18.25 15 18.25C13.7574 18.25 12.75 17.2426 12.75 16C12.75 14.7574 13.7574 13.75 15 13.75C16.2426 13.75 17.25 14.7574 17.25 16Z"
+                      stroke="#8A8AA3"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="main-content">
+            <div class="side-panel">
+              <div class="property-list">
+                <div class="property-card">
+                  <div class="image-container">
+                    <img src="./assets/property-card-image.jpg" alt="card-image" />
+                  </div>
+                  <div class="room-info">
+                    <h3>Amazing home title</h3>
+                    <div class="specifications">
+                      <span>
+                        <span class="bed-count"><strong>3</strong></span> bedroom
+                      </span>
+                      <span>
+                        <span class="bath-count"><strong>2</strong></span> bath
+                      </span>
+                      <span>
+                        <span class="area"><strong>1,200</strong></span> squ ft
+                      </span>
+                    </div>
+                    <div class="property-price">
+                      <div class="price-wrapper">
+                        $<span class="price">1,200,000</span>
+                      </div>
+                      <div class="avatar-container">
+                        <div class="avatar">
+                          <img src="./assets/property-card-avatar.png" alt="avatar" />
+                        </div>
+      
+                        <span class="avatar-name">Ted L.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-card">
+                  <div class="image-container">
+                    <img src="./assets/property-card-image.jpg" alt="card-image" />
+                  </div>
+                  <div class="room-info">
+                    <h3>Amazing home title</h3>
+                    <div class="specifications">
+                      <span>
+                        <span class="bed-count"><strong>3</strong></span> bedroom
+                      </span>
+                      <span>
+                        <span class="bath-count"><strong>2</strong></span> bath
+                      </span>
+                      <span>
+                        <span class="area"><strong>1,200</strong></span> squ ft
+                      </span>
+                    </div>
+                    <div class="property-price">
+                      <div class="price-wrapper">
+                        $<span class="price">1,200,000</span>
+                      </div>
+                      <div class="avatar-container">
+                        <div class="avatar">
+                          <img src="./assets/property-card-avatar.png" alt="avatar" />
+                        </div>
+      
+                        <span class="avatar-name">Ted L.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-card">
+                  <div class="image-container">
+                    <img src="./assets/property-card-image.jpg" alt="card-image" />
+                  </div>
+                  <div class="room-info">
+                    <h3>Amazing home title</h3>
+                    <div class="specifications">
+                      <span>
+                        <span class="bed-count"><strong>3</strong></span> bedroom
+                      </span>
+                      <span>
+                        <span class="bath-count"><strong>2</strong></span> bath
+                      </span>
+                      <span>
+                        <span class="area"><strong>1,200</strong></span> squ ft
+                      </span>
+                    </div>
+                    <div class="property-price">
+                      <div class="price-wrapper">
+                        $<span class="price">1,200,000</span>
+                      </div>
+                      <div class="avatar-container">
+                        <div class="avatar">
+                          <img src="./assets/property-card-avatar.png" alt="avatar" />
+                        </div>
+      
+                        <span class="avatar-name">Ted L.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="map-wrapper">
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68447.54888939518!2d-85.57731729900244!3d38.24305239113517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886975b69e04d0e3%3A0xc2e3bdb7af5fd914!2sGlenview%20Hills%2C%20KY%2040222%2C%20USA!5e0!3m2!1sen!2sin!4v1719197927501!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
         </section>
-        <section id="find-agent" class="tab-content show">
+        <section id="find-agent" class="tab-content">
           <div class="section-wrapper">
             <div class="cover-image-wrapper">
               <div class="cover-text">
@@ -145,8 +364,8 @@
                     <h3 class="agent-name">Keely Jones</h3>
                     <p class="agent-detail">
                       I am a native of Arizona and have lived in Phoenix for 21
-                      years. I was born and raised in Flagstaff, where I attended
-                      Northern Arizona... MORE
+                      years. I was born and raised in Flagstaff, where I
+                      attended Northern Arizona... MORE
                     </p>
                     <a href="/">Contact Keely</a>
                   </div>
@@ -160,8 +379,8 @@
                     <h3 class="agent-name">Keely Jones</h3>
                     <p class="agent-detail">
                       I am a native of Arizona and have lived in Phoenix for 21
-                      years. I was born and raised in Flagstaff, where I attended
-                      Northern Arizona... MORE
+                      years. I was born and raised in Flagstaff, where I
+                      attended Northern Arizona... MORE
                     </p>
                     <a href="/">Contact Keely</a>
                   </div>
@@ -175,8 +394,8 @@
                     <h3 class="agent-name">Keely Jones</h3>
                     <p class="agent-detail">
                       I am a native of Arizona and have lived in Phoenix for 21
-                      years. I was born and raised in Flagstaff, where I attended
-                      Northern Arizona... MORE
+                      years. I was born and raised in Flagstaff, where I
+                      attended Northern Arizona... MORE
                     </p>
                     <a href="/">Contact Keely</a>
                   </div>
@@ -190,8 +409,8 @@
                     <h3 class="agent-name">Keely Jones</h3>
                     <p class="agent-detail">
                       I am a native of Arizona and have lived in Phoenix for 21
-                      years. I was born and raised in Flagstaff, where I attended
-                      Northern Arizona... MORE
+                      years. I was born and raised in Flagstaff, where I
+                      attended Northern Arizona... MORE
                     </p>
                     <a href="/">Contact Keely</a>
                   </div>
@@ -205,8 +424,8 @@
                     <h3 class="agent-name">Keely Jones</h3>
                     <p class="agent-detail">
                       I am a native of Arizona and have lived in Phoenix for 21
-                      years. I was born and raised in Flagstaff, where I attended
-                      Northern Arizona... MORE
+                      years. I was born and raised in Flagstaff, where I
+                      attended Northern Arizona... MORE
                     </p>
                     <a href="/">Contact Keely</a>
                   </div>
@@ -220,8 +439,8 @@
                     <h3 class="agent-name">Keely Jones</h3>
                     <p class="agent-detail">
                       I am a native of Arizona and have lived in Phoenix for 21
-                      years. I was born and raised in Flagstaff, where I attended
-                      Northern Arizona... MORE
+                      years. I was born and raised in Flagstaff, where I
+                      attended Northern Arizona... MORE
                     </p>
                     <a href="/">Contact Keely</a>
                   </div>
@@ -235,8 +454,8 @@
                     <h3 class="agent-name">Keely Jones</h3>
                     <p class="agent-detail">
                       I am a native of Arizona and have lived in Phoenix for 21
-                      years. I was born and raised in Flagstaff, where I attended
-                      Northern Arizona... MORE
+                      years. I was born and raised in Flagstaff, where I
+                      attended Northern Arizona... MORE
                     </p>
                     <a href="/">Contact Keely</a>
                   </div>
@@ -250,8 +469,8 @@
                     <h3 class="agent-name">Keely Jones</h3>
                     <p class="agent-detail">
                       I am a native of Arizona and have lived in Phoenix for 21
-                      years. I was born and raised in Flagstaff, where I attended
-                      Northern Arizona... MORE
+                      years. I was born and raised in Flagstaff, where I
+                      attended Northern Arizona... MORE
                     </p>
                     <a href="/">Contact Keely</a>
                   </div>
