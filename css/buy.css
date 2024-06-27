@@ -293,7 +293,7 @@ main {
 }
 
 .agents-list-section {
-  padding: 118.5px 144px 0;
+  padding: 118.5px 50px 0;
 }
 
 .agents-list-section > h3,
@@ -334,7 +334,15 @@ footer {
   }
 }
 
+@media screen and (max-width: 1280px){
+  .professional-box {
+    padding: 32px;
+    flex: 350px 0 0;
+  }
+}
+
 @media screen and (max-width: 1200px){
+  /*Find Home*/
   .side-panel{
     flex: 35% 0 0;
   }
@@ -342,12 +350,20 @@ footer {
   .map-wrapper{
     flex: 65% 0 0;
   }
+
+  /*Find agent*/
+  .professional-wrapper {
+    flex-wrap:wrap;
+  }
 }
 
 @media screen and (max-width: 970px){
   .main-content{
+    padding: 12px 40px 40px;
     flex-wrap: wrap;
   }
+
+  /*Find home*/
   .side-panel{
     flex: 100% 0 0;
   }
@@ -360,15 +376,66 @@ footer {
   .map-wrapper{
     flex: 100% 0 0;
   }
+
+  /*Find agent*/
+  .cover-text{
+    max-width: 380px;
+    top: 125.5px;
+    left: 24px;
+  }
+
+  .cover-text h1{
+    font-size: 32px;
+  }
+
+  .cover-image-wrapper .image-container {
+    width: 64%;
+  }
+  
 }
 
 @media screen and (max-width: 835px){
+    /*Find Agent*/
   .select-wrapper{
     display: none;
+  }
+
+  .inner-section {
+    padding: 49px 16px 0;
+  }
+
+  .inner-section > h2 {
+    margin: 0 0 32px 0;
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .agents-list-section > h2 {
+    margin-right: auto;
+  }
+
+  .inner-section > h3:after {
+    left: 72%;
+  }
+}
+
+@media screen and (max-width: 768px){
+   /*Find Agent*/
+  .section-wrapper {
+    padding: 0 16px;
+  }
+
+  .cover-image-wrapper:after {
+    background-image: linear-gradient(to right, #121217 15%, transparent);
+  }
+
+  .cover-image-wrapper .image-container {
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 640px) {
+  /*Find agent*/
   .agents-list-wrapper {
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -389,11 +456,32 @@ footer {
 }
 
 @media screen and (max-width: 576px){
+  /*Find Home*/
+  .main-content {
+    padding: 12px 24px 40px;
+}
+
+  .top-bar {
+    gap: 12px;
+  }
+
+  .side-panel {
+    margin: 0;
+  }
+
   .tab-container {
     margin: 0 0 20px 0;
     padding: 12px 16px 0;
     flex-wrap: wrap;
     gap: 12px;
+  }
+
+  .tab-container h2{
+    font-size: 20px;
+  }
+
+  .tab-wrapper{
+    display: flex;
   }
 
   .tab-container > *{
@@ -411,4 +499,51 @@ footer {
   .map-search-wrapper {
     width: 219px;
   }
+  
+  .map-wrapper{
+    display: none;
+  }
+
+
+  /*Find Agent*/
+
+  .cover-text h1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+  .cover-image-wrapper{
+    height: auto;
+    aspect-ratio: 1.33;
+  }
+
+  .cover-image-wrapper .image-container {
+    position: relative;
+    width: 100%;
+    right: -100px;
+  }
+
+  .inner-section > h3 {
+    color: #a9a9bc;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+  .inner-section > h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .view-more-btn-wrapper a {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width:420px){
+   /*Find Agent*/
+  .cover-text{
+    max-width: 250px;
+    top: 61px;
+  } 
 }
