@@ -139,6 +139,21 @@ main {
   height: 100%;
 }
 
+#map-button{
+  display: none;
+  padding: 10px 20px;
+  gap:12px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  color: #fff; 
+  background-color: #282833;
+  font-size: 14px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
 /*Find Agent*/
 
 .cover-text {
@@ -324,6 +339,8 @@ footer {
   margin: -80px 0 0 0;
 }
 
+
+/*Screen size less than 1440px*/
 @media screen and (max-width: 1440px){
   .side-panel{
     flex: 28% 0 0;
@@ -334,6 +351,7 @@ footer {
   }
 }
 
+/*Screen size less than 1280px*/
 @media screen and (max-width: 1280px){
   .professional-box {
     padding: 32px;
@@ -341,6 +359,7 @@ footer {
   }
 }
 
+/*Screen size less than 1200px*/
 @media screen and (max-width: 1200px){
   /*Find Home*/
   .side-panel{
@@ -357,13 +376,14 @@ footer {
   }
 }
 
+/*Screen size less than 970px*/
 @media screen and (max-width: 970px){
+    /*Find home*/
   .main-content{
     padding: 12px 40px 40px;
     flex-wrap: wrap;
   }
 
-  /*Find home*/
   .side-panel{
     flex: 100% 0 0;
   }
@@ -394,12 +414,14 @@ footer {
   
 }
 
+/*Screen size less than 835px*/
 @media screen and (max-width: 835px){
-    /*Find Agent*/
+   /*Find Home*/
   .select-wrapper{
     display: none;
   }
 
+   /*Find Agent*/
   .inner-section {
     padding: 49px 16px 0;
   }
@@ -419,6 +441,7 @@ footer {
   }
 }
 
+/*Screen size less than 768px*/
 @media screen and (max-width: 768px){
    /*Find Agent*/
   .section-wrapper {
@@ -434,6 +457,7 @@ footer {
   }
 }
 
+/*Screen size less than 640px*/
 @media screen and (max-width: 640px) {
   /*Find agent*/
   .agents-list-wrapper {
@@ -455,6 +479,7 @@ footer {
   }
 }
 
+/*Screen size less than 576px*/
 @media screen and (max-width: 576px){
   /*Find Home*/
   .main-content {
@@ -504,6 +529,10 @@ footer {
     display: none;
   }
 
+  #map-button{
+    display: flex;
+  }
+
 
   /*Find Agent*/
 
@@ -540,6 +569,7 @@ footer {
   }
 }
 
+/*Screen size less than 420px*/
 @media screen and (max-width:420px){
    /*Find Agent*/
   .cover-text{

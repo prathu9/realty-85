@@ -16,7 +16,7 @@ main {
   z-index: 10;
 }
 
-#owners .cover-text {
+.cover-text {
   top: 69.5px;
 }
 
@@ -64,6 +64,17 @@ main {
   background-color: #e61e2b;
   border-radius: 12px;
   border: none;
+}
+
+.cover-text a{
+  margin: 16px 0 0 0;
+  padding: 4px 12px;
+  display: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  background-color: #e61e2b;
+  border-radius: 8px;
 }
 
 .cover-image-wrapper {
@@ -400,4 +411,270 @@ main {
 .map > * {
   width: 100%;
   height: 100%;
+}
+
+#map-button{
+  display: none;
+  padding: 10px 20px;
+  gap:12px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  color: #fff; 
+  background-color: #282833;
+  font-size: 14px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+/*Screen size less than 1440px*/
+@media screen and (max-width: 1440px){
+  .side-panel{
+    flex: 28% 0 0;
+  }
+  
+  .map-wrapper{
+    flex: 70% 0 0;
+  }
+}
+
+/*Screen size less than 1200px*/
+@media screen and (max-width: 1200px){
+  /*Tenants*/
+  .side-panel{
+    flex: 35% 0 0;
+  }
+  
+  .map-wrapper{
+    flex: 65% 0 0;
+  }
+
+  /*Owner*/
+  .rent-benefit-wrapper{
+    flex-wrap:wrap;
+  }
+
+  .section-2-title {
+    padding: 93.5px 100px;
+}
+
+.testimonial-container {
+  padding: 0 100px;
+}
+}
+
+/*Screen size less than 970px*/
+@media screen and (max-width: 970px){
+    /*Tenants*/
+    .main-content{
+      padding: 12px 40px 40px;
+      flex-wrap: wrap;
+    }
+  
+    .side-panel{
+      flex: 100% 0 0;
+    }
+  
+    .property-list{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .map-wrapper{
+      flex: 100% 0 0;
+    }
+
+    /*Owner*/
+  .cover-text{
+    max-width: 380px;
+    left: 24px;
+  }
+
+  .cover-text h1{
+    font-size: 32px;
+  }
+
+  .cover-image-wrapper .image-container {
+    width: 64%;
+  }
+
+  .section-2-title {
+    padding: 93.5px 80px;
+}
+
+.testimonial-container {
+  padding: 0 80px;
+}
+}
+
+/*Screen size less than 835px*/
+@media screen and (max-width: 835px){
+  /*Tenants*/
+ .select-wrapper{
+   display: none;
+ }
+
+ /*Owners*/
+ .inner-section{
+  padding: 49px 16px 0;
+}
+
+.inner-section > h2,
+.section-2-title h2 {
+  margin: 0 0 32px 0;
+  font-size: 40px;
+  line-height: 55px;
+}
+}
+
+/*Screen size less than 768px*/
+@media screen and (max-width: 768px){
+  /*Owner*/
+  .section-wrapper {
+    padding: 0 16px;
+  }
+ 
+  .cover-image-wrapper:after {
+    background-image: linear-gradient(to right, #121217 15%, transparent);
+  }
+ 
+  .cover-image-wrapper .image-container {
+    width: 90%;
+  }
+  
+  .section-2-title{
+    flex-wrap: wrap;
+  }
+
+  .testimonial-container{
+    flex-wrap: wrap;
+  }
+ }
+
+/*Screen size less than 576px*/
+@media screen and (max-width: 576px){
+  
+  .tab-container {
+    margin: 0 0 20px 0;
+    padding: 12px 16px 0;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .tab-container h2{
+    font-size: 20px;
+  }
+
+  .tab-wrapper{
+    display: flex;
+  }
+
+  .tab-container > *{
+    flex: 100% 0 0;
+  }
+
+  .tab-container .tab-option{
+    width: 45%;
+  }
+
+  /*Tenants*/
+  .main-content {
+    padding: 12px 24px 40px;
+}
+
+  .top-bar {
+    gap: 12px;
+  }
+
+  .side-panel {
+    margin: 0;
+  }
+
+  #tenants .top-bar {
+    padding: 12px 16px;
+  }
+
+  .map-search-wrapper {
+    width: 219px;
+  }
+  
+  .map-wrapper{
+    display: none;
+  }
+
+  
+#map-button{
+  display: flex;
+}
+
+  /*Owner*/
+  .cover-text{
+    max-width: 280px;
+  top: 37px;
+}
+
+.cover-text h4{
+  margin: 0 0 16px 0;
+  font-size: 12px;
+}
+
+.cover-text h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.search-home-wrapper {
+  display: none;
+}
+
+.cover-text a {
+  display: inline-block;
+}
+
+  .cover-image-wrapper{
+    height: auto;
+    aspect-ratio: 1.33;
+  }
+
+  .cover-image-wrapper .image-container {
+    position: relative;
+    width: 100%;
+    right: -100px;
+  }
+
+  .inner-section > h3,
+  .section-2-title h3 {
+    color: #a9a9bc;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+  .inner-section > h2,
+  .section-2-title h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .section-2-title{
+    padding: 32px 0;
+  }
+
+  .testimonial-container{
+    width: 100%;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+
+  .testimonial-container > *{
+    flex: 90% 0 0;
+  }
+
+}
+
+@media screen and (max-width: 420px){
+  .rent-benefit-box {
+    flex: 100% 0 0;
+  }
 }
